@@ -6,15 +6,16 @@ elid@uci.edu
 # Description
 
 The assignment code will create 4 worker threads. Each thread has its own task
-execution time, period (deadline), and so on. You need to give 1 argument. Based on the argument value, your program uses a different scheduling function (0: FIFO scheduling, 1: Earliest deadline first (EDF) scheduling, 
-and 2: Rate-Monotonic (RM) scheduling). For example, if 0 is the input argument, then your
+execution time, period (deadline), and so on. You need to give 1 argument. 
+Based on the argument value, your program uses a different scheduling function 
+(0: FIFO scheduling, 1: Earliest deadline first (EDF) scheduling, and 2: Rate-Monotonic (RM) scheduling). 
+
+For example, if 0 is the input argument, then your
 program should use FIFO scheduling.
-● Your job is to implement two thread scheduling functions in main.cpp, fifo
-schedule, and
-_
-edf
-_
-schedule. RM scheduling is NOT mandatory. You must read all of the starter codes
+
+Your job is to implement two thread scheduling functions in main.cpp, fifo_schedule, and edf_schedule. 
+
+RM scheduling is NOT mandatory. You must read all of the starter codes
 and understand the behavior of the program before starting the assignment.
 ○ You will need to implement the FIFO scheduling function first. Then check
 whether the FIFO scheduling satisfies all the deadlines or not.
