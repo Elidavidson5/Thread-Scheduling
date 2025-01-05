@@ -15,10 +15,14 @@ program should use FIFO scheduling.
 
 Your job is to implement two thread scheduling functions in main.cpp, fifo_schedule, and edf_schedule. 
 
-RM scheduling is NOT mandatory. You must read all of the starter codes
-and understand the behavior of the program before starting the assignment.
+RM scheduling is NOT mandatory. 
+
+You must read all of the starter codes and understand the behavior of the program before starting the assignment.
+
 ○ You will need to implement the FIFO scheduling function first. Then check
 whether the FIFO scheduling satisfies all the deadlines or not.
+
+
 ○ After that, you need to implement your own scheduling function based on EDF
 scheduling. Your EDF-based scheduling function MUST satisfy all the deadlines.
 
@@ -32,8 +36,11 @@ pthread_cond_wait(&preempt_task, &mutex);
 _
 // thread is preempted here
 ○ If you complete the RM scheduling function, you will get extra points.
+
 ● You will need to understand pthread conditional variables to complete this
-assignment. ○ You will need to use pthread_cond_wait and pthread_cond_signal. 
+assignment. 
+
+○ You will need to use pthread_cond_wait and pthread_cond_signal. 
 
 The ready_queue vector stores all ready threads by their id. The running_thread variable keeps track of what thread is currently working, a value of
 -1 means no thread is currently working.
