@@ -29,11 +29,14 @@ scheduling. Your EDF-based scheduling function MUST satisfy all the deadlines.
 
 ○ In order to satisfy all the deadlines, you will need to use preemption, this is
 in the starter code and can be accomplished as follows
-supported // preempt the current running thread
+supported 
+
+// preempt the current running thread
 
 preempt = 1;
 pthread_cond_wait(&preempt_task, &mutex);
-_
+
+
 // thread is preempted here
 ○ If you complete the RM scheduling function, you will get extra points.
 
@@ -42,8 +45,9 @@ assignment.
 
 ○ You will need to use pthread_cond_wait and pthread_cond_signal. 
 
-The ready_queue vector stores all ready threads by their id. The running_thread variable keeps track of what thread is currently working, a value of
--1 means no thread is currently working.
+The ready_queue vector stores all ready threads by their id. The running_thread variable keeps track of what thread is currently working, a value of -1 means no thread is currently working.
+
+
 ● Your scheduling function should schedule threads from the ready_queue vector by
 signaling t o the thread using the corresponding pthread conditional variable resume[x]
 where x is the thread id.
